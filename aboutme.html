@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">        
+    <link rel="stylesheet" href="flowers.css">
+
+</head>
+<body>
+    <header class="top-nav">
+        <a class="logo" href="index.html"><img src="assets/Flowers-logo/vector/default.svg" alt="Flowers Logo"></a>
+        <ul class="menuList">
+            <li><a href="index.html">home</a></li>
+            <li><a href="index.html#aboutMeLink">about</a></li>
+            <li><a href="index.html#servicesLink">services</a></li>
+            <li><a href="flowerpictures.html" target="_none">gallery</a></li>
+        </ul>
+        <a class="calltoaction" href="#contact">contact me</a>
+    </header>
+
+    <nav class="hamburgerMenu">
+        <a href="#" class="toggleMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+        </a>
+        <ul class="menuListSmall hidden">
+            <li><a href="index.html">home</a></li>
+            <li><a href="#aboutMeLink">about</a></li>
+            <li><a href="#servicesLink">services</a></li>
+            <li><a href="flowerpictures.html" target="_none">gallery</a></li>
+        </ul>
+    </nav>
+
+    <section class="aboutMeContainer aboutMeContainerPage">
+        <h2 class="aboutMeTitle aboutMeTitlePage" id="aboutMeLink">About Us</h2>
+        <section class="aboutMe aboutMePage">
+                <section id="aboutMePage" class="aboutMeIntro aboutMeIntroPage">
+                    <img src="assets/AboutMePics/meritt-thomas-u-hb93v6iwi-unsp.jpeg" alt="getting her hair styled">
+                </section>
+                <section class="aboutMeDesc aboutMeDescPage">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis non excepturi, tempore Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, earum deleniti at nihil, veniam, fugit dolor nulla sed commodi dignissimos ipsum dicta? Expedita, accusamus odit. doloribus pariatur deleniti nisi nobis distinctio obcaecati quisquam enim, optio veniam delectus. Quidem asperiores in accusamus qui magni?</p>
+                </section>
+        </section>
+    </section>
+    <section class="aboutMeContainer aboutMeContainerPage">
+        <h2 class="aboutMeTitle aboutMeTitlePage" id="aboutMeLink">our mission</h2>
+        <section class="aboutMe aboutMePage">
+                <section id="aboutMePage" class="aboutMeIntro aboutMeIntroPage">
+                    <img src="assets/AboutMePics/alex-seinet-8dmtbpjjj7k-unspla.jpeg" alt="getting her hair styled">
+                </section>
+                <section class="aboutMeDesc aboutMeDescPage">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt vitae earum, temporibus fugiat dolores aspernatur ducimus, nulla perspiciatis magnam minima ipsa in reprehenderit dolor? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis non excepturi, tempore doloribus pariatur deleniti nisi nobis distinctio obcaecati quisquam enim, optio veniam delectus. Quidem asperiores in accusamus qui magni?</p>
+                </section>
+        </section>
+    </section>
+    <section class="aboutMeContainer aboutMeContainerPage">
+        <h2 class="aboutMeTitle aboutMeTitlePage" id="aboutMeLink">our roots</h2>
+        <section class="aboutMe aboutMePage">
+                <section id="aboutMePage" class="aboutMeIntro aboutMeIntroPage">
+                    <img src="assets/AboutMePics/alex-pugliese-u2tsj5h3rxq-unsp.jpeg" alt="getting her hair styled">
+                </section>
+                <section class="aboutMeDesc aboutMeDescPage">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur consequuntur, ex voluptatem veritatis rerum corrupti itaque odio accusamus sunt eveniet? Nam officia quod dignissimos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis non excepturi, tempore doloribus pariatur deleniti nisi nobis distinctio obcaecati quisquam enim, optio veniam delectus. Quidem asperiores in accusamus qui magni?</p>
+                </section>
+        </section>
+    </section>
+
+
+    <footer>
+        <section class="contactMeSection">
+            <h2 class="myContactTitle title" id="contactMeLink">Contact</h2>
+            <section id="contact">
+                <div class="content">
+                  <h1 class="contact-title">Message us Directly</h1>
+                  <div class="contact-content">
+                    <form name="contact" method="post" id="register" data-netlify="true">
+                        <div class="name">
+                        <input class="boxShadow" type="text" name="name" id="name" placeholder="Name *" required="">
+                      </div>
+                      <div class="subject">
+                        <input class="boxShadow" type="text" name="subject" id="subject" placeholder="Subject *" required="">
+                      </div>
+                      <div class="email">
+                        <input class="boxShadow" type="email" name="email" id="email" placeholder="Email *" required="">
+                      </div>
+                      <div class="message">
+                        <textarea class="boxShadow" id="message" name="message" placeholder="Message *" required=""></textarea>
+                        <label id="counter"></label>
+                      </div>
+                      <input type="submit" value="Submit" class="submit">
+                    </form>
+                    <h3 class="socialsTitle">catch us on social media</h3>
+                  </div>
+                </div>
+              </section>
+            <section class="contactMeIcons">
+                <div class="twitter">
+                    <a href="#" target="_blank" >
+                        <img src="assets/logos/Twitter_Logo_Blue-310x310.png" alt="Twitter">
+                    </a>
+                </div>
+                <div class="instagram">
+                    <a href="#" target="_blank" >
+                        <img src="assets/logos/glyph-logo_May2016-310x310.png" alt="Instagram">
+                    </a>
+                </div>
+                <div class="linkedin">
+                    <a href="#" target="_blank" >
+                        <img src="assets/logos/In-2C-54px-R.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="facebook">
+                    <a href="#" target="_blank" >
+                        <img src="assets/facebook.png" alt="Facebook">
+                    </a>
+                </div>
+        </section>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+    </footer>
+    <script type="text/javascript" src="flowers.js"></script>
+
+</body>
+</html>

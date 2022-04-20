@@ -1,0 +1,820 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Source Serif Pro', serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+a:hover{
+    cursor: pointer;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+    /* background: linear-gradient(rgb(170, 73, 199), #eedcbb, #c4c72f91, #e8c5ff, #f59a50)  */
+    background: linear-gradient(rgb(247, 234, 255), rgb(245, 233, 250), rgb(240, 203, 255));
+}
+body * {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+.top-nav {
+    height: 78px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid rgb(170, 73, 199);
+
+}
+.top-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+}
+.top-nav li {
+    text-align: center;
+    display: flex;
+    flex-basis: 20%;
+    border-left: 2px solid rgb(170, 73, 199);
+    padding-left: 20px;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-right: auto;
+}
+.logo img {
+    min-width: 80px;
+    min-height: 80px;
+}
+.calltoaction {
+    padding-right: 30px;
+    padding-left: 20px;
+    border-left: 2px solid rgb(170, 73, 199);
+
+}
+.top-display * {
+    color: white;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+}
+.top-display {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    justify-content: space-between;
+    align-items: center;
+    background: url(assets/output-onlinepngtools.png) no-repeat;
+    background-position: 100% 10%;
+    background-size: cover;
+    background-origin: border-box;
+    background-attachment:local;
+}
+.heading h1{
+    margin-top: 100px;
+    font-size: 3rem;
+    letter-spacing: .25rem;
+    width: 75%;
+    text-shadow: 2px 2px black;
+}
+.heading p {
+    padding-top: 2%;
+    width: 75%;
+    letter-spacing: .2rem;
+    color: white;
+    font-style: italic;
+    text-shadow: 2px 2px black;
+}
+.heading h2 {
+    text-shadow: 2px 2px black;
+}
+.heading a {
+    display: inline-block;
+    margin-top: 2%;
+    margin-bottom: 8%;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    color: black;
+    font-weight: 700;
+    box-shadow: 2px 2px black;
+}
+.heading a:hover{
+    border: 1px solid black;
+}
+.offer {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    margin-top: auto;
+    height: 150px;
+    justify-content: space-around;
+    padding: 5px;
+    margin-bottom: 100px;
+    width: 250px;
+    border-radius: 5%;
+}
+.offer h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px black;
+    margin-bottom: 20px;
+
+}
+.discount h2 {
+    display: flex;
+}
+.discount span {
+    display: flex;
+    font-weight: 700;
+}
+.hours{
+    display: flex;
+    writing-mode: vertical-rl;
+    padding-right: 5px;
+    letter-spacing: .2rem;
+    text-shadow: 2px 2px black;
+}
+.hours p{
+    font-size: 20px;
+
+}
+.features {
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.feature {
+    line-height: 1.5rem;
+    flex-basis: 30%;
+    text-align: center;
+    border-bottom: 8px solid rgb(170, 73, 199);
+    border-top: 8px solid rgb(170, 73, 199);
+    padding-top: 90px;
+    padding-bottom: 75px;
+}
+.feature h4 {
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+.feature p {
+    font-size: .65rem;
+}
+.feature img {
+    border-radius: 50%;
+}
+.aboutMe {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+}
+.aboutMeIntro {
+    text-align: center;
+}
+.aboutMe img {
+    border-radius: 5%;
+    width: 50%;
+    border: 20px double rgb(170, 73, 199);
+
+}
+.aboutMeHeader{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    
+}
+.aboutMeDesc {
+    align-self: center;
+    flex-basis: 60%;
+    height: 20%;
+    margin-right: 50px;
+}
+.aboutMeDesc * {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: black;
+    text-align: left;
+}
+.aboutMeLink {
+    width: 30ch;
+    text-align: center;
+    display: block;
+    margin: 20px auto 0 auto;
+    font-size: .95rem;
+    border: 1px solid rgb(170, 73, 199);
+    border-radius: 10px;
+    background: linear-gradient(rgb(84, 41, 135), rgb(170, 73, 199)); 
+    padding: .25rem;
+    box-shadow: 2px 2px rgb(188, 162, 221)
+}
+.aboutMeLink:hover{
+    border: 2px solid rgb(188, 162, 221);
+}
+.aboutMeTitle {
+    margin-bottom: 7%;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5rem;
+    background: linear-gradient(rgb(84, 41, 135), rgb(170, 73, 199)); 
+    padding: 30px;
+}
+.servicesTitle{
+    margin-top: 5%;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5rem;
+    background: linear-gradient(rgb(84, 41, 135), rgb(170, 73, 199)); 
+    padding: 30px;
+}
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 12px solid rgb(228, 195, 8);
+    padding: 10% 0;
+    text-align: center;
+}
+.services1 {
+    border-top: 12px solid rgb(228, 195, 8);
+
+}
+.servicesHeader {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.services img {
+    display: flex;
+    width: 90%;
+    max-width: 90vw;
+    border-radius: 10%;
+}
+.servicesTextContainer{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.services p {
+    text-align: center;
+    line-height: 1.25rem;
+}
+.myContactTitle {
+    margin-bottom: 7%;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5rem;
+    background: linear-gradient(rgb(84, 41, 135), rgb(170, 73, 199)); 
+    padding: 30px;
+}
+.contactMeIcons {
+    display: flex;
+    height: 120px;
+    flex-basis: 25%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.contactMeIcons img {
+    width: 50px;
+}
+.twitter img {
+    width: 80px;
+}
+.linkedin img {
+    width: 60px;
+}
+#contact{
+	height: 400px;
+	width: 100%;
+}
+.contact-title{
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.contact-content{
+	text-align: center;
+}
+.content{
+	margin: 0 auto;
+	max-width: 500px;
+}
+.content h1{
+	text-align: center;
+	font-weight: 500;
+}
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+	width: 100%;
+	height: 50px;
+	padding: 0px;
+  margin-bottom: 10px;
+	border: 0px;
+	border-radius: 2px;
+  font-size: 16px;
+	text-indent: 12px;
+	opacity: 0.80;
+	font-weight: 400;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus{
+	background: white;
+	opacity: 1;
+	outline: none;
+}
+textarea{
+	height: 125px;
+	padding-top: 12px;
+	resize: none;
+}
+.socialsTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 30px;
+    color: rgb(170, 73, 199);
+    text-shadow: 1px 1px rgb(243, 233, 247);
+}
+.submit{ 
+  margin: 20px 0;
+  width: 100%; 
+  height: 40px;
+  background: rgba(255, 255, 255, 0);
+  border-color: black; 
+  font-size: initial;
+  color: black; 
+  font-weight: bolder;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+  border-radius: 2px;
+}
+.submit:hover{
+	background: black; 
+    color: white;
+}
+.boxShadow {
+	-webkit-transition: all 250ms;
+ 	-moz-transition: all 250ms;
+	transition: all 250ms;
+ 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.boxShadow:hover, .boxShadow:focus {
+	-webkit-transform: translateY(-5px);
+ 	-moz-transform: translateY(-5px);
+ 	transform: translateY(-5px);
+ 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+ }
+ #myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 10%; 
+    right: 1%; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgba(53, 53, 53, .3); 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 5%; 
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+
+/******************************************
+/* About Me Page
+/*******************************************/
+
+.altServices2 {
+    display: none;
+}
+.altHours {
+    display: none;
+}
+
+.aboutMeIntroPage img {
+    margin-bottom: 75px;
+    border: 5px solid rgb(170, 73, 199);
+}
+.aboutMeDescPage p {
+    text-align: center;
+    padding-bottom: 30px;
+}
+/******************************************
+/* Gallery Page
+/*******************************************/
+
+.thumb-wrapper {
+    position: relative;
+}
+.thumb-wrapper,
+p {
+  text-align: center;
+}
+.thumbnail {
+  position: relative;
+  max-width: auto;
+  height: 140px;
+  border: 3px solid rgb(240, 182, 255);
+  margin-bottom: 30px;
+}
+
+.lightbox {
+  display: none;
+  z-index: 999;
+  width: auto;
+  height: 50vh;
+  margin: auto;
+}
+
+.lightbox:target {
+  outline: none;
+  display: block;
+}
+.galleryHeader{
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5rem;
+    background: linear-gradient(rgb(84, 41, 135), rgb(170, 73, 199)); 
+    padding: 30px;
+}
+.seeMoreOnSocial {
+    margin: 5% 10% 0 10%;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.25rem;
+    background: linear-gradient(rgb(84, 41, 135), rgb(170, 73, 199)); 
+    padding: 10px;
+    line-height: 2rem;
+}
+.contactMeIconsGallery{
+    margin-top: 50px;
+}
+.flowerPicturesTitleText {
+    text-align: center;
+    font-size: 1.75rem;
+    margin: 100px 0;
+    font-weight: 900px;
+}
+  .arrowlf {
+    position: relative;
+    margin: 0 5px 88px 25px;
+    display: inline-block;
+	width: 0px;
+	height: 0px;
+	border-left: 12px solid black;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	opacity: 0.3;
+	box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.61);
+}
+.arrowlf:before {
+	content: '';
+	width: 10px;
+	height: 13px;
+	background-color: black;
+	position: absolute;
+	left: -20px;
+	top: -6px;
+}
+.arrowlf:hover {
+    cursor: pointer;
+}
+
+.arrowrh {
+    position: relative;
+    margin: 0 25px 88px 5px;
+    display: inline-block;    
+	width: 0px;
+	height: 0px;
+	border-right: 12px solid black;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;	
+	opacity: 0.3;
+	box-shadow:  inset 0px 7px 1px 2px rgba(255, 255, 255, 0.91);
+}
+.arrowrh:before {
+	content: '';
+	width: 10px;
+	height: 13px;
+	background-color: black;
+	position: absolute;
+	left: 10px;
+	top: -6px;
+}
+.arrowrh:hover {
+    cursor: pointer;
+}
+.selected {
+    border: 6px solid rgb(170, 73, 199);
+}
+.toggleMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-between;
+    left: 45vw;
+    top: 7px;
+    width: 10vw;
+    height: 30px;
+    cursor: pointer;
+}
+.bar {
+    background-color: #555;
+    height: 6px;
+    content: "";
+    width: 100%;
+    background-color: rgb(170, 73, 199);
+    border-radius: 10px;
+}
+.menuListSmall {
+    display: flex;
+    flex-direction: column;
+}
+.menuListSmall li {
+    display: flex;
+    height: 3rem;
+    background: linear-gradient(rgb(84, 41, 135), rgb(170, 73, 199)); 
+    width: 100vw;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 0.5px solid white;
+}
+.menuListSmall li:hover {
+    background: linear-gradient(rgb(188, 162, 221), rgb(232, 195, 243)); 
+}
+
+.menuListSmall:first-child{
+    margin-top: 0px;
+    border-top: 0.5px solid white;
+}
+.menuListSmall:last-child{
+    margin-bottom: 10px;
+}
+.hamburgerMenu {
+    display: none;
+}
+.hidden {
+    display: none;
+}
+/******************************************
+Media Queries
+/*******************************************/
+@media screen and (min-width: 1700px){
+    .top-display {
+        height: 55vh;
+    }
+    html {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .thumbnail {
+        zoom: .75;
+    }
+    .arrowlf {
+        margin-left: 30px;
+        margin-bottom: 60px;
+    }
+    .arrowrh {
+        margin-right: 30px;
+        margin-bottom: 60px;
+    }
+}
+
+
+@media screen and (max-width: 875px){
+    .services {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
+    .services2 {
+        display: none;
+    }
+    .altServices2 {
+        display: flex;
+    }
+    .servicesHeader {
+        margin-top: 50px;
+    }
+    .services a {
+        display: flex;
+        width: 90vw;
+    }
+    .services img {
+        margin: auto;
+    }
+    .services p {
+        margin: 0px 30px;
+    }
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .aboutMe img {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+    .aboutMeDesc {
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .aboutMeLink {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 750px){
+    .top-nav li {
+        padding-left: 5px;
+        margin-left: 3px;
+    }
+    .top-display {
+        height: auto;
+        flex-direction: column;
+    }
+    .hours {
+        display: none;
+    }
+    .altHours {
+        display: block;
+        margin-top: 5px;
+    }
+    .top-display{
+        zoom: .8;
+    }
+    .heading {
+        height: 500px;
+    }
+    .heading h1,
+    .heading p,
+    .heading h2 {
+        width: 100%;
+    }
+    .heading h1 {
+        font-size: 3rem;
+    }
+    .heading p {
+        font-size: 1.5rem;
+    }
+    .offer .altHours {
+        font-size: 1rem;
+        width: 100vw;
+    }
+    .features {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .features p {
+        font-size: .8rem;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .features h4 {
+        font-size: 1.1rem;
+    }
+    .seeMoreOnSocial {
+        zoom: .6;
+    }
+    .top-nav {
+        zoom: .8;
+    }
+    .flowerPicturesTitleText {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    .contactMeSection {
+        zoom: .75;
+    }
+    .socialsTitle {
+        font-size: 1.15rem;
+        margin-top: 0;
+    }
+    .contactMeIcons {
+        zoom: .6;
+    }
+    .lightbox {
+        max-width: 98vw;
+        height: auto;
+    }
+}
+@media screen and (max-width: 600px){
+
+    .heading {
+        width: 100%;
+    }
+    .thumbnail {
+        zoom: .7;
+    }
+    .lightbox {
+        zoom: .75;
+    }
+    .seeMoreOnSocial{
+        zoom: .5;
+    }
+    .contactMeIcons {
+        zoom: .5;
+    }
+}
+@media screen and (max-width: 450px){
+    .thumbnail {
+        zoom: .5;
+    }
+    .arrowlf {
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+    .arrowrh {
+        margin-right: 10px;
+        margin-bottom: 40px;
+    }
+    .seeMoreOnSocial {
+        zoom: .35;
+    }
+    .top-nav {
+        zoom: .6;
+    }
+    .hamburgerMenu{
+        display: flex;
+    }
+    .top-nav .menuList {
+        display: none;
+    }
+}

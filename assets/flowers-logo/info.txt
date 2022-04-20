@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Nautilus
+font link: http://nautilustype.com/
+font author: PUNK YOU BRANDS
+font author site: https://punk-you.ru/
+Slogan Font: KaushanScript-Regular.ttf
+
+icon designer: DinosoftLab
+icon designer link: /dinosoftlab
+        
+{"bg-gradient-0":"#49247E","bg-gradient-1":"#AA49C7","icon":"#ffffff","font":"#ffffff","slogan":"#ffffff"}
+      
